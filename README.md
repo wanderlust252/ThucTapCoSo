@@ -1,6 +1,8 @@
 # API thi trắc nghiệm Build with TypeORM
 #LeHieu a.k.a wanderlust252
 
+Hãy chắc chắn rằng bạn đã cài NodeJS ^^
+
 Steps to run this project:
 
 1. Run `npm i` command
@@ -20,3 +22,5 @@ Mở file `ormconfig.json` và sửa các thông tin dưới đây sao cho phù 
 "password": "",
 
 "database": "thi-thpt-ttcs",
+
+
