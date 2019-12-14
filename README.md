@@ -24,8 +24,11 @@ Mở file `ormconfig.json` và sửa các thông tin dưới đây sao cho phù 
 "database": "thi-thpt-ttcs",
 
 API:
+
 - Login:
+
 POST /user/login
+
 kiểu truyền: body 
 {
 	"account":"aaaaa",
@@ -34,7 +37,9 @@ kiểu truyền: body
 }
 
 - Signup
+
 POST /user/signup
+
 kiểu truyền: body 
 {
 	"account":"aaaaa",
