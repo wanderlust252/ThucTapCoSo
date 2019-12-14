@@ -27,6 +27,14 @@ export class cauhoi_ly {
     ngaythem:string | null;
         
 
+    @Column("int",{ 
+        nullable:true,
+        default: () => "'0'",
+        name:"loai_cauhoi"
+        })
+    loai_cauhoi:number | null;
+        
+
     @Column("text",{ 
         nullable:false,
         name:"cauhoi"

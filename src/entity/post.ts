@@ -1,5 +1,4 @@
 import {BaseEntity,Column,Entity,Index,JoinColumn,JoinTable,ManyToMany,ManyToOne,OneToMany,OneToOne,PrimaryColumn,PrimaryGeneratedColumn,RelationId} from "typeorm";
-import {category} from "./category";
 
 
 @Entity("post",{schema:"thi-thpt-ttcs" } )
@@ -25,10 +24,4 @@ export class post {
         })
     text:string;
         
-
-   
-    @ManyToMany(type=>category, category=>category.posts,{  nullable:false, })
-    @JoinTable({ name:'post_categories_category'})
-    categorys:category[];
-    
 }

@@ -29,6 +29,13 @@ export class users {
     pass:string;
         
 
+    @Column("varchar",{ 
+        nullable:false,
+        name:"username"
+        })
+    username:string;
+        
+
     @Column("int",{ 
         nullable:true,
         default: () => "'1'",
@@ -45,11 +52,12 @@ export class users {
     tinhtrang:number | null;
         
 
-    @Column("date",{ 
+    @Column("datetime",{ 
         nullable:true,
+        default: () => "CURRENT_TIMESTAMP",
         name:"ngaydangky"
         })
-    ngaydangky:string | null;
+    ngaydangky:Date | null;
         
 
    

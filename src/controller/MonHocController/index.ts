@@ -7,11 +7,7 @@ export default class MonHocController {
         this.monhocService = new MonHocService();
     }
     public getAll = async (req: Request, res: Response, next: NextFunction) => {
-        console.log("Received get all monhoc ==> GET");
-        var md5 = require('md5');
-
-        console.log(md5('message'));
-        var index = req.query.index;
+        console.log("Received get all mon hoc ==> GET");
         await this.monhocService.getAll().then((result) =>
             res.send({ code: "success", data: result ? result : {} })
             // MyUtil.handleSuccess(result , res)
@@ -20,8 +16,7 @@ export default class MonHocController {
     };
     public postTest = async (req: Request, res: Response) => {
         console.log("create a new city ==> POST");
-
-        console.log("req.body ", req)
+        console.log("req.body ", req.body)
         if (!(req.body && req.body.city_name)) {
             res.send({ code: "error", message: "No data!" })
             res.end();
